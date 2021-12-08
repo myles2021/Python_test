@@ -34,3 +34,19 @@ for x in range(5):
 
 
 print([x for x in range(5)])
+
+
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+
+for i in range(10):
+    if i == 5:
+        continue
+    print(i)
+
+# times tables from 0 to 12
+for i in range(13):
+    for j in range(13):
+        print(i, "x", j, "=", i * j)
