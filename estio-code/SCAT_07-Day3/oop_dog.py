@@ -39,3 +39,26 @@ Sam = Student("Sam", "18")
 print(getattr(Kane, "age"))
 print(getattr(Myles, "age"))
 print(getattr(Sam, "name"))
+
+
+class Animal:
+    babies = 0
+
+    def reproduce(self):
+        self.babies += 1
+
+class Dog(Animal):
+    def reproduce(self):
+        self.babies += 6
+
+
+john = Dog()
+john.reproduce()
+print(john.babies)
+
+
+class Athlete:
+    def __init__(self, name):
+        self.name = name
+
+# class Footballer:
