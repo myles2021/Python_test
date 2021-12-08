@@ -61,4 +61,12 @@ class Athlete:
     def __init__(self, name):
         self.name = name
 
-# class Footballer:
+class Footballer(Athlete):
+    def __init__(self, name, team):
+        super().__init__(name)
+        self.team = team
+
+
+player1 = Footballer("Jay", "Bolton Wanderers")
+
+print(player1.name)
